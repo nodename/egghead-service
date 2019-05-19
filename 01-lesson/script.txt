@@ -1,0 +1,6 @@
+for f in "$@"
+do
+    DIR=$(dirname "$f")
+    FILE=$(basename "$f")
+    cd "$DIR"; /Users/alan/bin/term/termcmd vi \\\"$FILE\\\"
+done
